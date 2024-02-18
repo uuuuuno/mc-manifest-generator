@@ -91,7 +91,7 @@ cp -r gamefiles/* ${LOCAL_MOUNT_DIR}/${servername}/gamefiles
 read -p "Apply the manifest (y/n)? " apply_manifest
 
 if [[ $apply_manifest == "Y" || $apply_manifest == "y" ]]; then
-    kubectl apply -f mc-${servername}-manifest.yaml
+    kubectl apply -f manifests/mc-${servername}-manifest.yaml
     echo "The manifest has been successfully applied."
 else
     echo "The manifest does not apply."
