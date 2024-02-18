@@ -10,11 +10,11 @@ rm manifests/mc-${servername}-manifest.yaml
 
 echo "Done."
 
-read -p "Delete the manifest (y/n)? " delete_manifest
+read -p "Delete the local manifest? (y/n)? " delete_manifest
 
 if [[ $delete_manifest == "Y" || $delete_manifest == "y" ]]; then
     kubectl delete -f mc-${servername}-manifest.yaml
-    echo "Manifest deleted successfully."
+    echo "The manifest was successfully deleted."
 else
-    echo "Manifest not deleted."
+    echo "The manifest has not been deleted."
 fi
