@@ -1,5 +1,11 @@
 #!/bin/bash
 
+echo ""
+echo "┌┬┐┌─┐  ┌┬┐┌─┐┌┐┌┬┌─┐┌─┐┌─┐┌┬┐  ┌─┐┌─┐┌┐┌┌─┐┬─┐┌─┐┌┬┐┌─┐┬─┐"
+echo "││││    │││├─┤││││├┤ ├┤ └─┐ │   │ ┬├┤ │││├┤ ├┬┘├─┤ │ │ │├┬┘"
+echo "┴ ┴└─┘  ┴ ┴┴ ┴┘└┘┴└  └─┘└─┘ ┴   └─┘└─┘┘└┘└─┘┴└─┴ ┴ ┴ └─┘┴└─"
+echo ""
+
 read -p "Enter server name (without special characters or spaces): " servername
 read -p "Enter a number between 32000 and 32556: " port
 
